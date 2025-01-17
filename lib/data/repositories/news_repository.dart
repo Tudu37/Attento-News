@@ -10,7 +10,7 @@ class NewsRepository{
 
   Future<NewsModel> fetchNews(String country,String category,int apiPage,int pageSize,)async{
 
-    String url = "/v2/top-headlines?country=${country}&category=${category}&apiKey=1484069142644c5690d9966bc44e60fb&page=${apiPage}&pageSize=${pageSize}";
+    String url = "/v2/top-headlines?country=${country}&category=${category}&apiKey=c63e1e8d748748fab07d0a4f2c8fdf47&page=${apiPage}&pageSize=${pageSize}";
 
     try{
       Response response = await dioClient.dio.get(url);
